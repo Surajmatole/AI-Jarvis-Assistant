@@ -1,129 +1,283 @@
-# 🤖 AI Jarvis Assistant
+# 🤖 Jarvis AI Assistant
 
-A Python-based AI Voice Assistant inspired by Iron Man's Jarvis.
+A modern voice-controlled desktop assistant built with Python and CustomTkinter.
 
-This assistant can recognize voice commands, open websites, play music, fetch the latest news, and answer general questions using Google's Gemini AI.
-
----
-
-## ✨ Features
-
-* 🎤 Wake Word Detection ("Jarvis")
-* 🌐 Open Websites
-* 🎵 Play Songs from Music Library
-* 🔎 Search & Play Songs on YouTube
-* 📰 Latest News Headlines
-* 🤖 AI Chat using Google Gemini API
-* 🗣️ Text-to-Speech Responses
-* 🎙️ Speech Recognition
-* 🔐 Secure API Keys using `.env`
+Jarvis listens for the wake word **"Jarvis"**, understands voice commands, automates Windows tasks, controls system settings, opens applications, interacts with AI using Google's Gemini API, and provides a modern desktop interface with real-time status updates.
 
 ---
 
-## 🛠️ Tech Stack
+## 📸 Screenshots
 
-* Python 3
-* SpeechRecognition
-* PyAudio
-* pyttsx3
-* Google Gemini API
-* Requests
-* python-dotenv
-* pywhatkit
-* Webbrowser
+### Home Screen
+
+![Home](screenshots/home.png)
 
 ---
 
-## 📂 Project Structure
+### Voice Interaction
+
+![Voice](screenshots/speaking.png)
+
+---
+
+### Browser Automation
+
+![Automation](screenshots/google.png)
+
+---
+
+# ✨ Features
+
+## 🎙 Voice Assistant
+
+- Wake word detection ("Jarvis")
+- Speech Recognition
+- Text-to-Speech responses
+- Real-time UI status
+- Command display
+
+---
+
+## 🖥 Modern Desktop UI
+
+- CustomTkinter Interface
+- Animated Robot
+- Live Status
+
+Status includes:
+
+- 🟢 Waiting
+- 🎤 Listening
+- 🧠 Processing
+- 🔊 Speaking
+- ⚡ Executing
+
+---
+
+## 🌐 Browser Automation
+
+Open websites instantly:
+
+- Google
+- YouTube
+- Facebook
+- LinkedIn
+- GitHub
+- ChatGPT
+
+Example:
+
+> "Jarvis, open Google"
+
+---
+
+## 💻 Windows Automation
+
+Launch applications using voice:
+
+- Visual Studio Code
+- Chrome
+- WhatsApp
+- Camera
+- Notepad
+- Command Prompt
+- File Explorer
+
+---
+
+## 📂 File Navigation
+
+Open system folders:
+
+- Desktop
+- Downloads
+- Documents
+- Pictures
+- Videos
+- Music
+
+---
+
+## ⚙ System Controls
+
+- Lock Computer
+- Shutdown Computer
+- Restart Computer
+- Open Task Manager
+
+Safety confirmation is required before shutdown or restart.
+
+---
+
+## 🔊 Volume Control
+
+Supports:
+
+- Increase Volume
+- Decrease Volume
+- Maximum Volume
+- Minimum Volume
+- Mute
+- Unmute
+- Set Volume to X%
+
+---
+
+## 💡 Brightness Control
+
+Supports:
+
+- Increase Brightness
+- Decrease Brightness
+- Maximum Brightness
+- Minimum Brightness
+- Current Brightness
+- Set Brightness to X%
+
+---
+
+## 📷 Camera
+
+Voice controlled:
+
+- Open Camera
+- Take Photo
+
+Features:
+
+- Face Detection
+- Countdown
+- Camera Flash
+- Shutter Sound
+- Automatic Desktop Save
+
+---
+
+## 📸 Screenshot Utility
+
+Take screenshots using voice.
+
+Features:
+
+- Countdown
+- Flash animation
+- Camera sound
+- Automatic Desktop Save
+
+---
+
+## 📰 News
+
+Reads latest headlines using the GNews API.
+
+---
+
+## 🌤 Weather
+
+Fetches live weather information.
+
+Example:
+
+> Weather in Pune
+
+---
+
+## ⏰ Timer
+
+Examples:
+
+- Set timer for 30 seconds
+- Set timer for 5 minutes
+
+---
+
+## 🎵 Music
+
+Supports:
+
+- Built-in playlist
+- YouTube search
+- Automatic playback
+
+---
+
+## 🔋 Battery Information
+
+Reports current battery percentage.
+
+---
+
+## 📅 Date & Time
+
+Supports:
+
+- Current Time
+- Today's Date
+
+---
+
+## 🧠 Gemini AI Integration
+
+Unknown commands are automatically forwarded to **Google Gemini AI**, allowing Jarvis to answer general questions naturally.
+
+---
+
+# 🛠 Technologies Used
+
+- Python
+- CustomTkinter
+- SpeechRecognition
+- pyttsx3
+- OpenCV
+- PyAutoGUI
+- psutil
+- pycaw
+- screen-brightness-control
+- Requests
+- Google Gemini API
+- dotenv
+- pywhatkit
+
+---
+
+# 📁 Project Structure
 
 ```
-AI-Jarvis-Assistant/
+Jarvis
 │
+├── app.py
 ├── main.py
 ├── client.py
 ├── musicLibrary.py
-├── .gitignore
-├── .env (Not Uploaded)
+├── ui/
+├── assets/
+├── screenshots/
 ├── requirements.txt
 └── README.md
 ```
 
 ---
 
-## 🚀 Installation
+# 🚀 Future Improvements
 
-Clone the repository
-
-```bash
-git clone https://github.com/Surajmatole/AI-Jarvis-Assistant.git
-```
-
-Go to the project folder
-
-```bash
-cd AI-Jarvis-Assistant
-```
-
-Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-Create a `.env` file
-
-```
-GEMINI_API_KEY=YOUR_GEMINI_API_KEY
-NEWS_API_KEY=YOUR_NEWS_API_KEY
-```
-
-Run the project
-
-```bash
-python main.py
-```
+- Weather UI Cards
+- Music Player Window
+- AI Chat History
+- Reminder System
+- Calendar Integration
+- Email Automation
+- Face Recognition Login
+- System Monitoring Dashboard
 
 ---
 
-## 🎙️ Example Commands
-
-* Jarvis
-* Open Google
-* Open YouTube
-* Open GitHub
-* Open Facebook
-* Play Perfect song
-* Play We on go song
-* Tell me the News
-* What is Python?
-* Who is Elon Musk?
-
-
----
-
-## 🔮 Future Improvements
-
-* Weather Forecast
-* WhatsApp Automation
-* Open Desktop Applications
-* Volume Control
-* Screenshot Capture
-* Camera Control
-* AI Chat History
-* GUI using CustomTkinter
-* Offline Wake Word Detection
-* Smart Automation
-
----
-
-## 👨‍💻 Author
+# 👨‍💻 Author
 
 **Suraj Matole**
 
-GitHub: https://github.com/Surajmatole
+Computer Engineering Student
 
----
+Python • AI • Automation • Machine Learning
 
-## ⭐ Support
-
-If you like this project, don't forget to ⭐ star the repository.
+GitHub:
+https://github.com/Surajmatole
